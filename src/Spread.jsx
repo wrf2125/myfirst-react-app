@@ -13,12 +13,16 @@ const new_Obj = {
   place: "Hyderabad",
 };
 
+const filter = (...args) => {
+  return args.filter((e1) => e1 === 1);
+};
 class Spread extends React.Component {
   render() {
     return (
       <div>
         {total_num} and obj name {new_Obj.name} dob{new_Obj.dob} and age{" "}
         {new_Obj.age} and place {new_Obj.place}
+        {filter(1, 2, 3)}
       </div>
     );
   }
